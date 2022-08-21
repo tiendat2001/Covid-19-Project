@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<AnchorPane fx:id="khaibaoyte" prefHeight="759.0" prefWidth="1245.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.code.controllers.KhaiBaoYTeController">
+    <children>
+        <TableView fx:id="tbl_khaibaoyte" layoutX="35.0" layoutY="104.0" onMouseClicked="#handleMouseAction" prefHeight="663.0" prefWidth="1194.0" AnchorPane.topAnchor="104.0">
+            <columns>
+                <TableColumn fx:id="col_hoten" prefWidth="202.99998474121094" resizable="false" text="Họ và tên" />
+                <TableColumn fx:id="col_soNha" prefWidth="302.60003662109375" resizable="false" text="Số nhà" />
+                <TableColumn fx:id="col_phuong" prefWidth="150.79998779296875" resizable="false" style="-fx-alignment: CENTER;" text="Phường" />
+                <TableColumn fx:id="col_quan" minWidth="0.0" prefWidth="154.199951171875" resizable="false" style="-fx-alignment: CENTER;" text="Quận" />
+                <TableColumn fx:id="col_diqua" minWidth="0.0" prefWidth="68.79998779296875" resizable="false" style="-fx-alignment: CENTER;" text="Có đi qua &#10;vùng dịch" />
+                <TableColumn fx:id="col_trieuchung" prefWidth="91.20001220703125" resizable="false" style="-fx-alignment: CENTER;" text="Có triệu&#10; chứng" />
+                <TableColumn fx:id="col_tiepxuc" minWidth="27.2000732421875" prefWidth="101.5999755859375" resizable="false" text="Tiếp xúc người ">
+                    <columns>
+                        <TableColumn fx:id="col_vungdich" prefWidth="75.0" resizable="false" style="-fx-alignment: CENTER;" text="Vùng dịch" />
+                        <TableColumn fx:id="col_bieuhien" prefWidth="75.0" resizable="false" style="-fx-alignment: CENTER;" text="Biểu hiện" />
+                        <TableColumn fx:id="col_maccovid" prefWidth="75.20001220703125" resizable="false" style="-fx-alignment: CENTER;" text="Mắc covid" />
+                    </columns>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <JFXButton fx:id="btn_them" layoutX="70.0" layoutY="40.0" mnemonicParsing="false" onAction="#AddKhaiBaoYTe" prefHeight="26.0" prefWidth="115.0" styleClass="addButton" text="Thêm">
+         <stylesheets>
+            <URL value="@../../../style/adminLayout.css" />
+            <URL value="@../../../style/main.css" />
+         </stylesheets></JFXButton>
+        <JFXButton fx:id="btn_update" layoutX="243.0" layoutY="40.0" mnemonicParsing="false" onAction="#editAction" styleClass="editButton" text="Chỉnh sửa" />
+        <JFXButton fx:id="btn_delete" layoutX="416.0" layoutY="40.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="26.0" prefWidth="62.0" styleClass="deleteButton" text="Xóa" />
+        <JFXButton fx:id="btn_refresh" layoutX="589.0" layoutY="40.0" mnemonicParsing="false" onAction="#refreshAction" prefHeight="26.0" prefWidth="73.0" styleClass="refreshButton" text="Tải lại" />
+    </children>
+   <stylesheets>
+      <URL value="@../../../style/adminLayout.css" />
+      <URL value="@../../../style/main.css" />
+   </stylesheets>
+</AnchorPane>

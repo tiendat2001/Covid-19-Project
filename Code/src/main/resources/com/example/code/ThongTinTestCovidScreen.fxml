@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="759.0" prefWidth="1245.0" stylesheets="@../../../style/main.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.code.controllers.ThongTinTestCovidController">
+   <children>
+      <ComboBox fx:id="HoTen_txt" layoutX="70.0" layoutY="123.0" prefWidth="150.0" promptText="Nhân Khẩu" />
+      <ComboBox fx:id="HTTest_txt" layoutX="70.0" layoutY="192.0" prefWidth="150.0" promptText="Hình thức test" />
+      <DatePicker fx:id="TGTest_txt" layoutX="70.0" layoutY="263.0" prefHeight="26.0" prefWidth="150.0" promptText="Thời gian test" />
+      <ComboBox fx:id="KQTest_txt" layoutX="70.0" layoutY="334.0" prefWidth="150.0" promptText="Kết quả" />
+
+      <JFXButton fx:id="bntAdd" layoutX="70.0" layoutY="40.0" mnemonicParsing="false" onAction="#addOnClick" prefHeight="26.0" prefWidth="66.0" styleClass="addButton" text="Thêm" textFill="WHITE" />
+      <JFXButton fx:id="bntUpdate1" layoutX="243.0" layoutY="40.0" mnemonicParsing="false" onAction="#updateOnClick" prefHeight="26.0" prefWidth="66.0" styleClass="editButton" text="Sửa" textFill="WHITE" />
+      <JFXButton fx:id="bntDelete1" layoutX="416.0" layoutY="40.0" mnemonicParsing="false" onAction="#deleteOnClick" prefHeight="26.0" prefWidth="66.0" styleClass="deleteButton" text="Xóa" textFill="WHITE" />
+      <TableView fx:id="table" layoutX="280.0" layoutY="108.0" onMouseClicked="#selectMouseClicked" prefHeight="652.0" prefWidth="931.0">
+         <columns>
+            <TableColumn fx:id="NhanKhauId" prefWidth="87.99996948242188" text="ID" />
+            <TableColumn fx:id="HoTen" prefWidth="265.60003662109375" text="Họ Tên" />
+            <TableColumn fx:id="HTTest" prefWidth="180.0" text="Hình thức test" />
+            <TableColumn fx:id="TGTest" prefWidth="190.40008544921875" text="Thời gian test" />
+            <TableColumn fx:id="KQTest" prefWidth="209.5999755859375" text="Kết quả test" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="findTextField" labelFloat="true" layoutX="949.0" layoutY="44.0" prefHeight="26.0" prefWidth="259.0" promptText="Tìm Kiếm" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.code.controllers.editScreens.EditKhaiBaoYTeScreen">
+   <children>
+      <Text fx:id="lbl_kbyt" fill="#2410f7" layoutX="36.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chỉnh Sửa Thông Tin" wrappingWidth="263.7366943359375">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="cb_diquavungdich" layoutX="39.0" layoutY="149.0" mnemonicParsing="false" text="Có đi qua vùng dịch" />
+      <CheckBox fx:id="cb_tiepxucnguoivungdich" layoutX="39.0" layoutY="191.0" mnemonicParsing="false" text="Tiếp xúc người từ vùng dịch" />
+      <CheckBox fx:id="cb_cotrieuchung" layoutX="341.0" layoutY="149.0" mnemonicParsing="false" text="Có triệu chứng" />
+      <CheckBox fx:id="cb_tiepxucnguoicobieuhien" layoutX="340.0" layoutY="191.0" mnemonicParsing="false" text="Tiếp xúc người có biểu hiện" />
+      <CheckBox fx:id="cb_tiepxucnguoimaccovid" layoutX="40.0" layoutY="236.0" mnemonicParsing="false" text="Tiếp xúc người mắc covid" />
+      <Button fx:id="btn_update" layoutX="209.0" layoutY="291.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="51.0" prefWidth="170.0" text="CHỈNH SỬA" textFill="#e71010">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../../../../style/main.css" />
+            <URL value="@../../../../style/EditClientScreen.css" />
+            <URL value="@../../../../style/userLogin.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="editButton" />
+            <String fx:value="btn-login" />
+         </styleClass>
+      </Button>
+      <Label fx:id="lbl_hovaten" layoutX="36.0" layoutY="75.0" text="Họ và tên:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="ten" layoutX="124.0" layoutY="73.0" prefHeight="32.0" prefWidth="352.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
