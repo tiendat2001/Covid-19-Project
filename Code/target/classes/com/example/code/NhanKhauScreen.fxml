@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="nhankhauscreen" prefHeight="759.0" prefWidth="1245.0" stylesheets="@../../../style/employee.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.code.controllers.NhanKhauController">
+    <VBox alignment="CENTER" layoutX="40.0" layoutY="97.0" />
+   <TableView fx:id="tblList" editable="true" layoutX="28.0" layoutY="98.0" onMouseClicked="#handleMouseAction" prefHeight="643.0" prefWidth="1203.0">
+      <columns>
+         <TableColumn fx:id="colId" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" style="-fx-alignment: CENTER;" text="ID" />
+         <TableColumn fx:id="colName" prefWidth="169.0" resizable="false" text="Họ tên" />
+         <TableColumn fx:id="colDOB" prefWidth="156.0" resizable="false" style="-fx-alignment: CENTER;" text="Ngày sinh" />
+         <TableColumn fx:id="colGender" minWidth="-1.0" prefWidth="81.0" resizable="false" style="-fx-alignment: CENTER;" text="Giới tính" />
+         <TableColumn fx:id="colCMND" prefWidth="221.0" resizable="false" style="-fx-alignment: CENTER;" text="Căn cước công dân" />
+         <TableColumn fx:id="colPhone" minWidth="0.0" prefWidth="180.0" resizable="false" style="-fx-alignment: CENTER;" text="Số điện thoại" />
+         <TableColumn fx:id="colDiaChi" minWidth="0.0" prefWidth="345.0" resizable="false" text="Địa chỉ" />
+      </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+   </TableView>
+   <JFXButton fx:id="addBtn" layoutX="70.0" layoutY="40.0" onAction="#openAddScreen" prefHeight="42.0" prefWidth="156.0" styleClass="addButton" stylesheets="@../../../style/main.css" text="Thêm" />
+   <JFXButton fx:id="editBtn" layoutX="243.0" layoutY="40.0" onAction="#openEditScreen" prefHeight="42.0" prefWidth="156.0" styleClass="editButton" stylesheets="@../../../style/main.css" text="Sửa" />
+   <JFXButton fx:id="deleteBtn" layoutX="416.0" layoutY="40.0" onAction="#delRecord" prefHeight="42.0" prefWidth="156.0" styleClass="deleteButton" stylesheets="@../../../style/main.css" text="Xóa" />
+   <JFXButton fx:id="refreshBtn" layoutX="589.0" layoutY="40.0" onAction="#refreshTable" prefHeight="42.0" prefWidth="156.0" styleClass="refreshButton" stylesheets="@../../../style/main.css" text="Tải lại" />
+   <JFXTextField layoutX="1000.0" layoutY="40.0" prefHeight="42.0" prefWidth="231.0" />
+</AnchorPane>

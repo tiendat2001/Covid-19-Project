@@ -1,0 +1,117 @@
+.managerSidebarImage{
+    -fx-opacity: 1;
+    -fx-background-image: url("../image/manager1(copy).jpeg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.managerSidebarPaneChange{
+    -fx-background-color: #000000;
+}
+
+.managerSidebarEachMenu{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+}
+.managerSidebarEachMenu:hover{
+    -fx-background-color: #8dff47;
+    -fx-text-fill: black;
+}
+.currentSidebarMenu{
+    -fx-background-color: #0061b6;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+}
+.titleTab{
+    -fx-background-radius: 0 0 60 0;
+    -fx-background-color: #0061b6;
+    -fx-effect: dropshadow(gaussian, gray , 10, 0.2, 3, 3);
+}
+.navbar{
+    -fx-background-color: #0061b6;
+    -fx-border-color: #0061b6;
+    -fx-effect: dropshadow(gaussian, gray , 10, 0.2, 3, 3);
+}
+.navbarTab{
+    -fx-background-color: transparent;
+}
+.scrollPane{
+    -fx-background-color: transparent;
+}
+.dashboard{
+    -fx-background-color: #eeeeee;
+}
+.dashboardBox{
+    -fx-background-color: white;
+}
+.dashboardBoxButton{
+    -fx-background-color: transparent;
+}
+.dashboardBoxButton:hover{
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #0091ea;
+}
+.exitBtn{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+.exitBtn:hover{
+    -fx-text-fill: black;
+    -fx-background-color: red;
+}
+.createBtn{
+    -fx-text-fill: black;
+    -fx-background-color: yellow;
+}
+.createBtn:hover{
+    -fx-background-color: #57b1ff;
+}
+.flashCreate{
+    -fx-text-fill: black;
+    -fx-background-color: #ebf305;
+    -fx-effect: dropshadow(gaussian, #0a0000, 10, 0.3, 3, 3);
+}
+.flashCreate:hover{
+    -fx-text-fill: black;
+    -fx-background-color: #f6e066;
+    -fx-effect: dropshadow(gaussian, #0a0000, 10, 0.3, 0.2, 0.2);
+}
+.listBtn{
+    -fx-text-fill: black;
+    -fx-background-color: #00ff04;
+}
+.listBtn:hover{
+    -fx-background-color: #57b1ff;
+}
+.deleteBtn{
+    -fx-text-fill: #ffffff;
+    -fx-background-color: red;
+}
+.deleteBtn:hover{
+    -fx-background-color: #57b1ff;
+}
+.table{
+    -fx-effect: dropshadow(gaussian, #4c4cff, 0.2, 0.1,1, 1);
+}
+.addNew{
+    -fx-background-color: yellow;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(gaussian, #acaa00, 0.2, 0.1,1, 1);
+}
+.addNew:hover{
+    -fx-effect: dropshadow(gaussian, #ffffff, 0.2, 0.1,1, 1);
+}
+.cancel{
+    -fx-background-color: #2d00ff;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, #0099ff, 0.2, 0.1,1, 1);
+}
+
+.exportBtn{
+    -fx-background-color: #34bf00;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #868686, 2, 0.3, 2, 2);
+}
+.exportBtn:hover{
+    -fx-effect: dropshadow(gaussian, #868686, 2, 0.3, 0, 0);
+}
